@@ -1,0 +1,90 @@
+/* Custom styles for Customer Review Insights */
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+}
+
+.footer {
+    margin-top: auto;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    font-weight: 600;
+}
+
+.display-4 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+/* Dashboard specific styles */
+#sentiment-pie-chart,
+#language-pie-chart,
+#sentiment-histogram,
+#sentiment-by-language {
+    width: 100%;
+    min-height: 350px;
+}
+
+/* Animation for loading states */
+.loading {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.6;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2rem;
+    }
+    
+    .card-title {
+        font-size: 0.9rem;
+    }
+}
+
+/* Stats cards */
+.card.text-center {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bg-success {
+    background-color: #4CAF50 !important;
+}
+
+.bg-danger {
+    background-color: #F44336 !important;
+}
+
+.bg-secondary {
+    background-color: #9E9E9E !important;
+}
